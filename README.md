@@ -18,7 +18,8 @@
 > ###### * 플레이어가 상호작용 할 수 있는 구 형태의 메뉴 아이콘을 만들고 해당 아이콘을 통해 원하는 포탑을 원하는 위치에 배치해 몬스터를 처치
 ![게임메뉴](https://user-images.githubusercontent.com/75113789/101274387-f9517800-37e0-11eb-912b-d2e907d66dc8.PNG)
 
-> ###### * ShootScript.cs
+> ###### * ShootScript.cs : 포탑(터렛, 탱크)의 사정거리 안으로 몹이 들어오면 타겟으로 설정 후 해당 위치 바라보고 발사 후 파괴
+        ...
         Collider[] colliders = Physics.OverlapSphere(transform.position, radius, 1 << 8);
         if (colliders.Length > 0)
         {
@@ -32,3 +33,10 @@
             }
         }
         transform.LookAt(target);
+        ...
+        if (count > 0)  // count : 공격 가능 횟수, 무기 공격속도에 따라 일정 시간마다 1씩 채워짐
+        {
+            Instantiate(explosion, target.position, Quaternion.identity);
+            Destroy(target.gameObject);
+            count = 0;
+        }
