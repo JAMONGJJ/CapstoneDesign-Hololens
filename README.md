@@ -10,5 +10,10 @@
 
 #### < 작업 내용 >
 > ###### * 홀로렌즈의 Spatial Mapping을 이용해 주변 지형지물을 스캔해 obj파일로 렌더링 후 유니티로 import
+![MyRoom캡처](https://user-images.githubusercontent.com/75113789/101274386-f9517800-37e0-11eb-89a4-5036d1058379.PNG)
+
 > ###### * 지형지물 중 평평한 물체 위에 게임을 진행할 필드를 배치하고 그에 맞춰 주변 오브젝트들을 배치
+![게임필드](https://user-images.githubusercontent.com/75113789/101274385-f787b480-37e0-11eb-8d0c-849027255842.PNG)
+
 > ###### * 플레이어가 상호작용 할 수 있는 구 형태의 메뉴 아이콘을 만들고 해당 아이콘을 통해 원하는 포탑을 원하는 위치에 배치해 몬스터를 처치
+![게임메뉴](https://user-images.githubusercontent.com/75113789/101274387-f9517800-37e0-11eb-912b-d2e907d66dc8.PNG)
